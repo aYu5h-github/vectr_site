@@ -1,12 +1,17 @@
 "use client";
 import { TypewriterEffect } from "./UI/typewriter-effect";
 
-export function TypewriterEffectDemo() {
-  const words = [
+type Word = {
+  text: string;
+  className?: string;
+};
+
+export default function TypewriterEffectDemo() {
+  const words: Word[] = [
     { text: "where " },
-    { text: "Magnitude " },
+    { text: "magnitude " },
     { text: "meets " },
-    { text: "Direction...", className: "text-primary text-dark-primary" },
+    { text: "direction...", className: "text-purple-600 dark:text-purple-500" },
   ];
 
   return (

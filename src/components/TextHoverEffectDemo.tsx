@@ -1,14 +1,23 @@
-// import React from "react";
-// import { TextHoverEffect } from "ui/text-hover-effect";
-// import { TypewriterEffectDemo } from "./TypewriterEffectDemo";
+"use client";
 
-// export function TextHoverEffectDemo() {
-//     return (
-//         <>
-//             <div className="h-[23rem] flex flex-col items-center justify-center pb-3">
-//                 <TextHoverEffect text="Vectr." />
-//                 <TypewriterEffectDemo />
-//             </div>
-//         </>
-//     );
-// }
+import React from "react";
+
+interface TextHoverEffectDemoProps {
+    className?: string;
+}
+
+import { TextHoverEffect } from "./UI/text-hover-effect";
+import TypewriterEffectDemo from "./TypewriterEffectDemo";
+
+const TextHoverEffectDemo: React.FC<TextHoverEffectDemoProps> = ({ className }) => {
+    return (
+        <div className={className}>
+            <div className="h-[20rem] flex flex-col items-center justify-center ">
+                <TextHoverEffect text="Vectr." />
+                <TypewriterEffectDemo />
+            </div>
+        </div>
+    );
+}
+
+export default TextHoverEffectDemo;
