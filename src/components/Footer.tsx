@@ -17,9 +17,6 @@ const Footer: React.FC = () => {
                             {siteDetails.siteName}
                         </h3>
                     </Link>
-                    <p className="mt-3.5 text-foreground-accent">
-                        {footerDetails.subheading}
-                    </p>
                 </div>
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -59,8 +56,6 @@ const Footer: React.FC = () => {
             </div>
             <div className="mt-8 md:text-center text-foreground-accent px-6">
                 <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
-                <p className="text-sm mt-2 text-gray-500">Made with &hearts; by <a href="https://nexilaunch.com" target="_blank">Nexi Launch</a></p>
-                <p className="text-sm mt-2 text-gray-500">UI kit by <a href="https://ui8.net/youthmind/products/fintech-finance-mobile-app-ui-kit" target="_blank">Youthmind</a></p>
             </div>
         </footer>
     );

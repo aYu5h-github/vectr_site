@@ -1,9 +1,9 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'Vectr',
+    siteUrl: 'https://vectr.vercel.app/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'Vectr-One stop destination for productivity and focus.',
+        description: 'Vectr stands for productivity, it&apos;s where magnitude meets direction.',
     },
     language: 'en-us',
     locale: 'en-US',

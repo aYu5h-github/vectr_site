@@ -1,31 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
-import { testimonials } from '@/data/testimonials';
 
 const Testimonials: React.FC = () => {
     return (
-        <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
-            {testimonials.map((testimonial, index) => (
-                <div
-                    key={index}
-                    className=""
-                >
-                    <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
-                        <Image
-                            src={testimonial.avatar}
-                            alt={`${testimonial.name} avatar`}
-                            width={50}
-                            height={50}
-                            className="rounded-full shadow-md"
-                        />
-                        <div className="ml-4">
-                            <h3 className="text-lg font-semibold text-secondary">{testimonial.name}</h3>
-                            <p className="text-sm text-foreground-accent">{testimonial.role}</p>
-                        </div>
-                    </div>
-                    <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p>
-                </div>
-            ))}
+        <div className="flex flex-col text-center w-[85%] max-w-lg mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
+            Vectr is your ultimate companion in the journey to academic excellence, engineered to eliminate distractions and enhance focus. By activating the innovative focus mode, Vectr transforms your digital workspace into a distraction-free zone, limiting access to non-essential apps and allowing you to concentrate on what truly matters. Beyond its focus-enhancing features, Vectr brings together a vibrant community of creators and learners. With dedicated channels, students gain access to a wide array of educational content tailored to promote growth and understanding. This platform not only empowers creators to share their insights without interruptions but also fosters a collaborative environment where students can interact, share ideas, and grow together.
+            <br />
+            Ultimately, Vectr is more than just an app—it&apos;s a movement towards increased productivity, deeper learning, and a more connected academic community.
         </div>
     );
 };

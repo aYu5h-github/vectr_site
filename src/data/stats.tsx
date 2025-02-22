@@ -5,9 +5,9 @@ import { IStats } from "@/types";
 
 export const stats: IStats[] = [
     {
-        title: "20M+",
+        title: "2M+",
         icon: <BsBarChartFill size={34} className="text-blue-500" />,
-        description: "Transactions processed securely every day, providing real-time insights."
+        description: "Students and professionals, using Vectr to enhance productivity."
     },
     {
         title: "5.0",
@@ -17,6 +17,6 @@ export const stats: IStats[] = [
     {
         title: "200+ ",
         icon: <PiGlobeFill size={34} className="text-green-600" />,
-        description: "Financial Institutions, seamlessly integrated, so you can manage all accounts."
+        description: "Creators and educators, contributing to the Vectr community."
     }
 ];
