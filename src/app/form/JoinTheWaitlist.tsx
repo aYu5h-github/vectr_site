@@ -1,7 +1,7 @@
 "use client";
 import React, { FormEvent } from "react";
-import { Label } from "../UI/label";
-import { Input } from "../UI/input";
+import { Label } from "../../components/UI/label";
+import { Input } from "../../components/UI/input";
 import { cn } from "@/utils";
 import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
 
