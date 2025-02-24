@@ -37,7 +37,8 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="/jointhewaitlist" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                            <Link href="/" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                            {/* <Link href="/jointhewaitlist" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"> */}
                                 Join the Waitlist
                             </Link>
                         </li>
