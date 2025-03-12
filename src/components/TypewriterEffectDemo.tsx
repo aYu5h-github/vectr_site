@@ -5,13 +5,12 @@ type Word = {
   text: string;
   className?: string;
 };
-
 export default function TypewriterEffectDemo() {
   const words: Word[] = [
-    { text: "where " },
-    { text: "magnitude " },
-    { text: "meets " },
-    { text: "direction...", className: "text-purple-600 dark:text-purple-500" },
+    { text: "Where " },
+    { text: "Magnitude " },
+    { text: "Meets " },
+    { text: "Direction...", className: "text-purple-600 dark:text-purple-500" },
   ];
 
   return (

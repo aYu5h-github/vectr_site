@@ -20,14 +20,14 @@ const Header: React.FC = () => {
     return (
         <header className="bg-transparent fixed top-0 left-0 right-0 md:fixed z-50 mx-auto w-full backdrop-blur-md bg-gradient-to-t from-white to-transparent">
             <Container className="!px-0">
-                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
+                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-6">
                     <Link href="/" className="flex items-center mt-0 pt-0">
-                        <Image src="/images/Vectr Logo transparent BG.webp" alt="Vectr" width={150} height={50} className='pl-0 ml-0' />
+                        <Image src="/images/Vectr Logo transparent BG.png" alt="Vectr" width={50} height={50} className='p-0 mr-5' />
                         <span className="manrope text-4xl font-semibold cursor-pointer bg-gradient-to-t from-purple-900 to-purple-400 bg-clip-text text-transparent">
                             {siteDetails.siteName}
                         </span>
                     </Link>
-                    
+
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
@@ -37,8 +37,8 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="/" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                            {/* <Link href="/jointhewaitlist" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"> */}
+                            <Link href="https://d0odd8306ly.typeform.com/to/y4iH2brK" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                                {/* <Link href="/JoinTheWaitlist" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"> */}
                                 Join the Waitlist
                             </Link>
                         </li>
@@ -64,7 +64,6 @@ const Header: React.FC = () => {
                 </nav>
             </Container>
 
-            {/* Mobile Menu with Transition */}
             <Transition
                 show={isOpen}
                 enter="transition ease-out duration-200 transform"
@@ -84,8 +83,8 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
+                            <Link href="https://d0odd8306ly.typeform.com/to/y4iH2brK" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                                Join the Waitlist
                             </Link>
                         </li>
                     </ul>
@@ -94,5 +93,4 @@ const Header: React.FC = () => {
         </header>
     );
 };
-
 export default Header;

@@ -1,5 +1,5 @@
 export const heroDetails = {
     // heading: 'Vectr.',
     // subheading: 'where magnitude meets direction',
-    centerImageSrc: '/images/Vectr Logo transparent BG.webp',
+    centerImageSrc: '/images/ai_assisstant.svg',
 }

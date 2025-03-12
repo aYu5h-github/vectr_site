@@ -11,14 +11,14 @@ export const footerDetails: {
             text: "Features",
             url: "#features"
         },
-        // {
-            // text: "Pricing",
-            // url: "#pricing"
-        // },
         {
             text: "Why Us?",
-            url: "#testimonials"
-        }
+            url: "#whyus"
+        },
+        {
+            text: "Join The Waitlist!!",
+            url: "https://d0odd8306ly.typeform.com/to/y4iH2brK"
+        },
     ],
     email: 'vectr@gmail.com',
     telephone: '+1 (123) 456-7890',

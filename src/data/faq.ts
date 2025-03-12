@@ -3,23 +3,23 @@ import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
     {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
+        question: `How is ${siteDetails.siteName} different from other study platforms?`,
+        answer: `${siteDetails.siteName} has a features like focus mode and pomodoro timer that help you manage time more effectively and stay more productive during study sessions.`,
     },
     {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
+        question: `Can I use ${siteDetails.siteName} to boost productivity?`,
+        answer: 'Absolutely! Vectr has focus mode and peer study leaderboard features that help you stay focused and motivated during study sessions.',
     },
     {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
+        question: `Is ${siteDetails.siteName} for creators?`,
+        answer: 'Absolutely. Creators can create and share their content, while also benefiting from our platform for increased visibility and engagement.',
     },
     {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
+        question: 'What are \'Communities\'?',
+        answer: 'Communities are groups where users can share their doubts, ask questions, and connect with like-minded individuals.',
     },
     {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        question: `How does ${siteDetails.siteName} deals with distractions?`,
+        answer: 'Unlike YouTube or other platforms, we ensure ad-free content delivery and a distraction-less environment for our users.',
     }
 ];

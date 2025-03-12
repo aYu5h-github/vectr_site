@@ -1,72 +1,32 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
-
 import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
-        bullets: [
-            {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
-            },
-            {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
-                icon: <FiTarget size={26} />
-            },
-            {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
-                icon: <FiTrendingUp size={26} />
-            }
-        ],
-        imageSrc: "/images/focus_mode.webp"
+        title: "Focus Mode",
+        subtitle:"Lock In. Zone Out. Get It Done",
+        description: "Ever started a study session, only to find yourself scrolling through your phone 10 minutes later? Vectr shuts the distractions down—so you can finally sit, study, and actually get things done. No more “just five more minutes” on social media. Just focus, locked in.",
+        footer:"Distractions Won't even Stand a Chance",
+        imageSrc: "/images/task.svg"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
-        bullets: [
-            {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
-                icon: <FiDollarSign size={26} />
-            },
-            {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
-            },
-            {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
-            }
-        ],
-        imageSrc: "/images/task_scheduling.webp"
+        title: "Peer Study Leaderboard",
+        subtitle: "Climb the Leaderboard. Beat Your Friends. Stay on Top",
+        description: "Studying alone is tough, but let’s be real—beating your friends makes it fun. The Peer Study Leaderboard turns your focus time into a game, where every minute counts and every session pushes you ahead. Compete, rank up, and stay accountable. You’re not just studying anymore—you’re winning.",
+        footer: "Your Friends Are Your Competition",
+        imageSrc: "/images/leaderboard.svg"
     },
     {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
-        bullets: [
-            {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
-            },
-            {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
-            },
-            {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
-                icon: <FiShield size={26} />
-            }
-        ],
-        imageSrc: "/images/Vectr Logo transparent BG.webp"
+        title: "Creator Channels",
+        subtitle: "Own Your Content. Reach More Students",
+        description: "You shouldn’t have to fight algorithms to reach your students. With Creator Channels, you finally get the control you deserve—a structured, distraction-free space to share knowledge, grow your audience, and monetize effortlessly. No more hidden content, no engagement traps—just you, your students, and the impact you’re meant to make.",
+        footer: "No Algorithms. No Barriers. Just Teaching",
+        imageSrc: "/images/communities.svg"
+    },
+    {
+        title: "Communities",
+        subtitle: "Tired of 'PeeDablu vs Pogi' Shitposts on JEENEETards?",
+        description: "Sorry, we’re not that different. But with Vectr’s in-app communities, your posts—whether doubts or shitposts—end up in the right place. Study, interact, and stay accountable without the chaos.",
+        footer: "Same reddit like communities—Just More Organized.",
+        imageSrc: "/images/communities.svg"
     },
 ]

@@ -2,8 +2,6 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { motion, Variants } from "framer-motion"
-
-import BenefitBullet from "./BenefitBullet";
 import SectionTitle from "../SectionTitle";
 import { IBenefit } from "@/types";
 
@@ -47,7 +45,7 @@ export const childVariants = {
 };
 
 const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
-    const { title, description, imageSrc, bullets } = benefit;
+    const { title, subtitle, description, footer, imageSrc } = benefit;
 
     return (
         <section className="benefit-section">
@@ -60,7 +58,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
             >
                 <div
                     className={clsx("flex flex-wrap items-center w-full max-w-lg", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
-                    
+
                 >
                     <div className="w-full  text-center lg:text-left ">
                         <motion.div
@@ -68,21 +66,24 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                             variants={childVariants}
                         >
                             <SectionTitle>
-                                <h3 className="lg:max-w-2xl">
+                                <h3 className="lg:max-w-2xl text-xl">
                                     {title}
                                 </h3>
                             </SectionTitle>
 
-                            <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-foreground-accent">
+                            <h2 className="text-3xl font-bold">
+                                {subtitle}
+                            </h2>
+
+                            <p className="lg:max-w-2xl mt-16 mx-auto lg:ml-0 leading-normal text-foreground-accent">
                                 {description}
                             </p>
-                        </motion.div>
 
-                        <div className="mx-auto lg:ml-0 w-full">
-                            {bullets.map((item, index) => (
-                                <BenefitBullet key={index} title={item.title} icon={item.icon} description={item.description} />
-                            ))}
-                        </div>
+                            <p className="mt-3.5 mx-auto lg:ml-0 leading-normal font-bold text-pink-500">
+                                {footer}
+                            </p>
+
+                        </motion.div>
                     </div>
                 </div>
 

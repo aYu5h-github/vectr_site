@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/Vectr Logo transparent BG.webp',
+        url: '/images/Vectr Logo transparent BG.png',
         width: 1200,
         height: 675,
         alt: siteDetails.siteName,

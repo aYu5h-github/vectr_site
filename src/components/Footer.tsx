@@ -23,18 +23,18 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/images/Vectr Logo transparent BG.webp" alt="Vectr" width={250} height={250} className='pl-0 ml-0' />
+              <Image src="/images/Vectr Logo transparent BG.png" alt="Vectr" width={50} height={50} className='p-0 mr-5' />
               <h3 className="manrope text-5xl font-semibold cursor-pointer bg-gradient-to-t from-purple-900 to-purple-400 bg-clip-text text-transparent">
                 {siteDetails.siteName}
               </h3>
             </Link>
           </div>
-          <div className='flex flex-col ml-10'>
+          <div className='flex flex-col'>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="text-foreground-accent">
               {footerDetails.quickLinks.map(link => (
                 <li key={link.text} className="mb-2">
-                  <Link href={link.url} className="hover:text-foreground ">
+                  <Link href={link.url} className="hover:text-purple-700 ">
                     {link.text}
                   </Link>
                 </li>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             {footerDetails.email && (
               <a
                 href={`mailto:${footerDetails.email}`}
-                className="block text-foreground-accent hover:text-foreground"
+                className="block text-foreground-accent hover:text-purple-700"
               >
                 Email: {footerDetails.email}
               </a>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             {footerDetails.telephone && (
               <a
                 href={`tel:${footerDetails.telephone}`}
-                className="block text-foreground-accent hover:text-foreground"
+                className="block text-foreground-accent hover:text-purple-700"
               >
                 Phone: {footerDetails.telephone}
               </a>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="mt-8 md:text-center text-foreground-accent px-6">
+        <div className="mt-8 md:text-center text-gray-900 px-6">
           <p>
             Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName} All rights
             reserved.

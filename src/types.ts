@@ -5,15 +5,10 @@ export interface IMenuItem {
 
 export interface IBenefit {
     title: string;
+    subtitle: string;
     description: string;
+    footer: string;
     imageSrc: string;
-    bullets: IBenefitBullet[]
-}
-
-export interface IBenefitBullet {
-    title: string;
-    description: string;
-    icon: JSX.Element;
 }
 
 export interface IPricing {

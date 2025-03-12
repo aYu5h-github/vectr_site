@@ -1,9 +1,17 @@
+"use client";
+
 import { ctaDetails } from "@/data/cta"
 
-import AppStoreButton from "./AppStoreButton"
-import PlayStoreButton from "./PlayStoreButton"
+import Link from "next/link"
+import { useState } from "react";
+
+// import AppStoreButton from "./AppStoreButton"
+// import PlayStoreButton from "./PlayStoreButton"
 
 const CTA: React.FC = () => {
+
+    const [email, setEmail] = useState("");
+
     return (
         <section id="cta" className="mt-10 mb-5 lg:my-20">
             <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
@@ -12,15 +20,30 @@ const CTA: React.FC = () => {
                         <div className="rounded-3xl absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_600px_at_50%_500px,#1C1C02,transparent)]"></div>
                     </div>
 
-                    <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
+                    <div className="h-full flex flex-col items-center justify-center text-purple-100 text-center px-5">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl md:leading-tight font-semibold mb-4 max-w-7xl">{ctaDetails.heading}</h2>
 
-                        <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
+                        <div className="md:px-0">{ctaDetails.subheading}</div>
+                        <div className="flex items-center justify-between bg-gray-800 p-2 rounded-full w-full max-w-5xl my-5">
+                            <input
+                                type="email"
+                                placeholder="Enter your E-mail address"
+                                className="flex-1 bg-transparent text-gray-300 placeholder-gray-400 px-4 py-2 outline-none"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <button className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition">
+                                Register
+                            </button>
+                        </div>
 
-                        <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
+                        <Link href={"https://web.telegram.org"} className="hover:text-blue-600"><p className="mx-auto max-w-xl md:px-5">{ctaDetails.footer}</p></Link>
+
+                        {/* <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
                             <AppStoreButton />
                             <PlayStoreButton />
-                        </div>
+                        </div> */}
+
                     </div>
                 </div>
             </div>
