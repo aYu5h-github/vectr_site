@@ -84,11 +84,11 @@
 
 
 
-
+// To Do
 "use client";
 
-import React, { useState, useEffect } from "react";
-import gsap from "gsap";
+// import React, { useState, useEffect } from "react";
+// import gsap from "gsap";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Testimonials from "@/components/WhyUs";
@@ -98,25 +98,25 @@ import Container from "@/components/Container";
 // import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
 import TextHoverEffectDemo from "@/components/TextHoverEffectDemo";
-import Loader from "@/Loader/Loader";
+// import Loader from "@/Loader/Loader";
 
 const HomePage: React.FC = () => {
-  const timeline = gsap.timeline();
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  // const timeline = gsap.timeline();
+  // const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 5000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
-      {isLoading && <Loader timeline={timeline} />}
+      {/* {isLoading && <Loader timeline={timeline} />}
       {!isLoading && (
-        <>
+        <> */}
           <TextHoverEffectDemo className="mt-[10rem] mb-0" />
           <Hero />
           <Container>
@@ -128,8 +128,8 @@ const HomePage: React.FC = () => {
             {/* <Stats /> */}
             <CTA />
           </Container>
-        </>
-      )}
+        {/* </>
+      )} */}
     </>
   );
 };
