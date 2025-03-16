@@ -23,8 +23,8 @@ export const footerDetails: {
     email: 'Abhinav.vectr@gmail.com',
     telephone: '+91 78988 59164',
     socials: {
-        github: 'https://github.com',
-        linkedin: 'https://www.linkedin.com',
-        instagram: 'https://www.instagram.com',
+        // github: 'https://github.com',
+        linkedin: 'https://www.linkedin.com/company/vectrs/posts/?feedView=all',
+        // instagram: 'https://www.instagram.com',
     }
 }
