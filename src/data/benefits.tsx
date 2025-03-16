@@ -20,7 +20,7 @@ export const benefits: IBenefit[] = [
         subtitle: "Own Your Content. Reach More Students",
         description: "You shouldn’t have to fight algorithms to reach your students. With Creator Channels, you finally get the control you deserve—a structured, distraction-free space to share knowledge, grow your audience, and monetize effortlessly. No more hidden content, no engagement traps—just you, your students, and the impact you’re meant to make.",
         footer: "No Algorithms. No Barriers. Just Teaching",
-        imageSrc: "/images/communities.svg"
+        imageSrc: "/images/creator.svg"
     },
     {
         title: "Communities",

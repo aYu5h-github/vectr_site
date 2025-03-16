@@ -13,6 +13,7 @@ const TextHoverEffectDemo: React.FC<TextHoverEffectDemoProps> = ({ className }) 
     return (
         <div className={className}>
             <div className="h-[20rem] flex flex-col items-center justify-center ">
+                {/* Vectr. */}
                 <TextHoverEffect text="Vectr." />
                 <TypewriterEffectDemo />
             </div>

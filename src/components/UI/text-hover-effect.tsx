@@ -70,7 +70,7 @@ export const TextHoverEffect: React.FC<TextHoverEffectProps> = ({ text, duration
                 textAnchor="middle"
                 dominantBaseline="middle"
                 strokeWidth="0.5"
-                className="font-[helvetica] font-bold stroke-neutral-200 dark:stroke-neutral-400 fill-transparent text-7xl"
+                className="font-[helvetica] font-bold stroke-purple-900 dark:stroke-purple-900 fill-transparent text-7xl"
             >
                 {text}
             </text>
@@ -80,7 +80,7 @@ export const TextHoverEffect: React.FC<TextHoverEffectProps> = ({ text, duration
                 textAnchor="middle"
                 dominantBaseline="middle"
                 strokeWidth="0.5"
-                className="font-[helvetica] font-bold stroke-neutral-200 dark:stroke-neutral-400 fill-transparent text-7xl"
+                className="font-[helvetica] font-bold stroke-purple-900 dark:stroke-purple-900 fill-transparent text-7xl"
                 initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
                 animate={{ strokeDashoffset: 0, strokeDasharray: 1000 }}
                 transition={{ duration: 4, ease: "easeInOut" }}

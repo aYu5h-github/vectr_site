@@ -20,8 +20,8 @@ export const footerDetails: {
             url: "https://d0odd8306ly.typeform.com/to/y4iH2brK"
         },
     ],
-    email: 'vectr@gmail.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'Abhinav.vectr@gmail.com',
+    telephone: '+91 78988 59164',
     socials: {
         github: 'https://github.com',
         linkedin: 'https://www.linkedin.com',

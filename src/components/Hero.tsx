@@ -24,14 +24,19 @@ const Hero: React.FC = () => {
                     </div>
                     <Image
                         src={heroDetails.centerImageSrc}
-                        width={384}
-                        height={340}
+                        width={300}
+                        height={300}
                         quality={100}
                         sizes="(max-width: 768px) 100vw, 384px"
                         priority={true}
                         unoptimized={true}
                         alt=""
-                        className='relative mt-12 md:mt-16 mx-auto z-10 '
+                        className="relative z-10 mx-auto
+                                     transform-gpu rotate-y-[-8deg] hover:rotate-y-[0deg] 
+                                     transition-transform duration-700 ease-out
+                                     drop-shadow-[0_20px_50px_rgba(0,0,255,1.35)]
+                                     rounded-lg"
+                    // className='relative mt-12 md:mt-16 mx-auto z-10 '
                     />
                 </div>
             </section>

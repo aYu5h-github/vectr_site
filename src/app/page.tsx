@@ -1,43 +1,147 @@
+// import Hero from "@/components/Hero";
+// import Section from "@/components/Section";
+// import Testimonials from "@/components/WhyUs";
+// import FAQ from "@/components/FAQ";
+// import Benefits from "@/components/Benefits/Benefits";
+// import Container from "@/components/Container";
+// import Stats from "@/components/Stats";
+// import CTA from "@/components/CTA";
+// import TextHoverEffectDemo from "@/components/TextHoverEffectDemo";
+// import gsap from "gsap";
+// import { useState, useEffect } from "react";
+// import Loader from "@/Loader/Loader";
+
+// const HomePage: React.FC = () => {
+//   const timeline = gsap.timeline();
+//   const [isLoading, setIsLoading] = useState(true);
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setIsLoading(false);
+//     }, 5000);
+
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   return (
+//     <>
+//       {isLoading && <Loader timeline={timeline} />}
+
+//       {!isLoading && (
+//         <>
+//           <TextHoverEffectDemo className="mt-[10rem] mb-0" />
+
+//           <Hero />
+
+//           <Container>
+
+//             <Section
+//               id="whyus"
+//               title="Why Vectr?"
+//               description=""
+//             >
+//               <Testimonials />
+//             </Section>
+
+//             <Benefits />
+
+//             <FAQ />
+
+//             <Stats />
+
+//             <CTA />
+//           </Container>
+//         </>
+//       )}
+
+//       {/* <TextHoverEffectDemo className="mt-[10rem] mb-0" />
+
+//       <Hero />
+
+//       <Container>
+
+//         <Section
+//           id="whyus"
+//           title="Why Vectr?"
+//           description=""
+//         >
+//           <Testimonials />
+//         </Section>
+
+//         <Benefits />
+
+//         <FAQ />
+
+//         <Stats />
+
+//         <CTA />
+//       </Container> */}
+//     </>
+//   );
+// };
+
+// export default HomePage;
+
+
+
+
+"use client";
+
+import React, { useState, useEffect } from "react";
+import gsap from "gsap";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Testimonials from "@/components/WhyUs";
 import FAQ from "@/components/FAQ";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
-import Stats from "@/components/Stats";
+// import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
 import TextHoverEffectDemo from "@/components/TextHoverEffectDemo";
+import Loader from "@/Loader/Loader";
 
 const HomePage: React.FC = () => {
+  const timeline = gsap.timeline();
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <TextHoverEffectDemo className="mt-[10rem] mb-0"/>
-
-      <Hero />
-
-      <Container>
-
-        <Section
-          id="whyus"
-          title="Why Vectr?"
-          description=""
-        >
-          <Testimonials />
-        </Section>
-
-        <Benefits />
-
-        <FAQ />
-
-        <Stats />
-
-        <CTA />
-      </Container>
+      {isLoading && <Loader timeline={timeline} />}
+      {!isLoading && (
+        <>
+          <TextHoverEffectDemo className="mt-[10rem] mb-0" />
+          <Hero />
+          <Container>
+            <Section id="whyus" title="Why Vectr?" description="">
+              <Testimonials />
+            </Section>
+            <Benefits />
+            <FAQ />
+            {/* <Stats /> */}
+            <CTA />
+          </Container>
+        </>
+      )}
     </>
   );
 };
 
 export default HomePage;
+
+
+
+
+
+
+
 
 
 
