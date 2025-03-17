@@ -1,3 +1,114 @@
+// .loader {
+//     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     background-color: #000;
+//     /* Background changed to pure black */
+//     overflow: hidden;
+//     z-index: 10000;
+
+//     &__wrapper {
+//         position: relative;
+//         height: 100%;
+//         width: 100%;
+//         position: fixed;
+//         inset: 0;
+//         overflow: hidden;
+//     }
+
+//     &__words {
+//         position: relative;
+//         overflow: hidden;
+//         height: 100vh;
+//     }
+
+//     &__overlay {
+//         position: absolute;
+//         inset: 0;
+//         height: 100%;
+//         z-index: 2;
+//         background: linear-gradient(to bottom,
+//                 rgba(0, 0, 0, 0.9),
+//                 /* Adjusted gradient for pure black theme */
+//                 rgba(0, 0, 0, 0.9) 47%,
+//                 transparent,
+//                 transparent 47%,
+//                 transparent,
+//                 transparent 55%,
+//                 rgba(0, 0, 0, 0.9) 50%,
+//                 rgba(0, 0, 0, 0.9));
+//     }
+
+//     &__word {
+//         display: block;
+//         font-size: 5rem;
+//         font-family: 'spacemono';
+//         color: white;
+//         background: linear-gradient(to right, #02b7ff, #0547fc);
+//         /* Gradient from orange to red */
+//         -webkit-background-clip: text;
+//         /* Clip the background to the text */
+//         -webkit-text-fill-color: transparent;
+//         /* Make the text transparent to show the gradient */
+//         background-clip: text;
+//         /* Standard background clip */
+//         text-fill-color: transparent;
+//         /* Standard text fill color */
+//     }
+
+//     &__progressWrapper {
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         height: 5vh;
+//         width: 100%;
+//         z-index: 10000;
+//     }
+
+//     &__progress {
+//         height: 100%;
+//         width: 100%;
+//         background: linear-gradient(to right, #0093f5, #590083);
+//         /* Green progress bar, matches dark themes well */
+//         transform: scaleX(0);
+//         transform-origin: left center;
+//     }
+
+//     &__progressNumber {
+//         position: absolute;
+//         font-family: 'fluxbox';
+//         // padding-right: 10px;
+//         left: -5vw;
+//         top: 55%;
+//         transform: translateY(-50%);
+//         z-index: 4;
+//         white-space: nowrap;
+//         color: #fff;
+//         /* Light progress number */
+//         font-size: 3.2rem;
+//     }
+// }
+
+// .loader__fadeOut {
+//     opacity: 0;
+//     transition: opacity 1s ease-in-out;
+//     pointer-events: none;
+// }
+
+
+
+
+
+
+
+
+
+
+
 .loader {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     height: 100%;
@@ -6,36 +117,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #000;
-    /* Background changed to pure black */
+    background-color: #000; // Pure black
     overflow: hidden;
     z-index: 10000;
 
-    &__fade-out {
-        opacity: 0;
-        /* Fade out effect */
-        transition: opacity 1s ease-in-out;
-        /* Smooth transition over 1 second */
-        pointer-events: none;
-        /* Disable interactions when fading out */
-    }
-
-    &__slide-out {
-        transform: translateY(-100%);
-        /* Slide out effect */
-        transition: transform 1s ease;
-        /* Smooth slide transition */
-        pointer-events: none;
-        /* Disable interactions */
-    }
-
     &__wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
         position: fixed;
         inset: 0;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
+    }
+
+    // Match your TSX usage: styles.loader__fadeOut
+    &__fadeOut {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        pointer-events: none;
     }
 
     &__words {
@@ -44,38 +142,37 @@
         height: 100vh;
     }
 
+    /* Add spacing/centering for your mapped words */
+    &__wordsGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 2rem; // Adjust spacing as needed
+    }
+
     &__overlay {
         position: absolute;
         inset: 0;
         height: 100%;
         z-index: 2;
+        /* Simplify or remove this gradient if it’s too dark. Example: */
         background: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0.9),
-                /* Adjusted gradient for pure black theme */
-                rgba(0, 0, 0, 0.9) 47%,
-                transparent,
-                transparent 47%,
-                transparent,
-                transparent 55%,
-                rgba(0, 0, 0, 0.9) 50%,
-                rgba(0, 0, 0, 0.9));
+                rgba(0, 0, 0, 0.9) 0%,
+                transparent 50%,
+                rgba(0, 0, 0, 0.9) 100%);
     }
 
     &__word {
         display: block;
-        font-size: 5rem;
-        font-family: 'spacemono';
-        color: white;
+        font-size: 2rem;
+        font-family: 'spacemono', monospace; // Make sure this font is available
         background: linear-gradient(to right, #02b7ff, #0547fc);
-        /* Gradient from orange to red */
         -webkit-background-clip: text;
-        /* Clip the background to the text */
         -webkit-text-fill-color: transparent;
-        /* Make the text transparent to show the gradient */
         background-clip: text;
-        /* Standard background clip */
         text-fill-color: transparent;
-        /* Standard text fill color */
     }
 
     &__progressWrapper {
@@ -91,28 +188,37 @@
         height: 100%;
         width: 100%;
         background: linear-gradient(to right, #0093f5, #590083);
-        /* Green progress bar, matches dark themes well */
         transform: scaleX(0);
         transform-origin: left center;
     }
 
     &__progressNumber {
         position: absolute;
-        font-family: 'fluxbox';
-        // padding-right: 10px;
+        font-family: 'fluxbox', monospace; // Ensure this font is available
         left: -5vw;
         top: 55%;
         transform: translateY(-50%);
         z-index: 4;
         white-space: nowrap;
         color: #fff;
-        /* Light progress number */
         font-size: 3.2rem;
     }
-}
 
-.loader__fadeOut {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    pointer-events: none;
+    .loader__vectr {
+        color: rgb(255, 0, 150) !important;
+        -webkit-text-fill-color: initial !important;
+        background: none !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+        font-size: 2.5rem !important;
+        text-shadow: none !important;
+        position: static !important; // Remove positioning
+        // animation: text-pulse 0.5s ease-in-out infinite;
+        animation: 0.5s ease-in-out infinite;
+      }
+      
+    //   @keyframes text-pulse {
+    //     0%, 100% { opacity: 1; }
+    //     50% { opacity: 0.5; }
+    //   }
 }
