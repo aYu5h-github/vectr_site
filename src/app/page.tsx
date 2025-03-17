@@ -91,7 +91,7 @@ import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 // import Hero from "@/components/Hero";
 import Section from "@/components/Section";
-import Testimonials from "@/components/WhyUs";
+import WhyUs from "@/components/WhyUs";
 import FAQ from "@/components/FAQ";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
@@ -99,6 +99,9 @@ import Container from "@/components/Container";
 import CTA from "@/components/CTA";
 import TextHoverEffectDemo from "@/components/TextHoverEffectDemo";
 import Loader from "@/Loader/Loader";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const HomePage: React.FC = () => {
   const timeline = gsap.timeline();
@@ -117,17 +120,19 @@ const HomePage: React.FC = () => {
       {isLoading && <Loader timeline={timeline} />}
       {!isLoading && (
         <>
+        <Header />
           <TextHoverEffectDemo className="mt-[10rem] mb-[10rem]" />
           {/* <Hero /> */}
           <Container>
             <Section id="whyus" title="Why Vectr?" description="">
-              <Testimonials />
+              <WhyUs />
             </Section>
             <Benefits />
             <FAQ />
             {/* <Stats /> */}
             <CTA />
           </Container>
+          <Footer />
         </>
       )}
     </>
