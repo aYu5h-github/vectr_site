@@ -167,7 +167,8 @@
     &__word {
         display: block;
         font-size: 2rem;
-        font-family: 'spacemono', monospace; // Make sure this font is available
+        font-family: 'Times New Roman', Times, serif; // Make sure this font is available
+        // font-family: 'spacemono', monospace; // Make sure this font is available
         background: linear-gradient(to right, #02b7ff, #0547fc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -207,6 +208,7 @@
     .loader__vectr {
         color: rgb(255, 0, 150) !important;
         -webkit-text-fill-color: initial !important;
+        font-family: 'spacemono', monospace !important;
         background: none !important;
         text-decoration: none !important;
         font-weight: bold !important;
