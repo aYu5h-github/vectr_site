@@ -15,6 +15,10 @@ export const footerDetails: {
             text: "Why Us?",
             url: "#whyus"
         },
+        // {
+        //     text: "Team",
+        //     url: "/teams"
+        // },
         {
             text: "Join The Waitlist!!",
             url: "https://d0odd8306ly.typeform.com/to/y4iH2brK"

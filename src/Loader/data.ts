@@ -21,7 +21,7 @@ export const words: string[] = [
   " ̶i̶n̶c̶o̶n̶s̶i̶s̶t̶e̶n̶c̶y̶",
   " ̶d̶i̶s̶t̶r̶a̶c̶t̶i̶o̶n̶",
   "Vectr.",
-  "focus",  
+  "focus",
   "productivity",
   "discipline",
   "persistence",
