@@ -89,16 +89,16 @@
 
 import React, { useState, useEffect } from "react";
 import gsap from "gsap";
-// import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import WhyUs from "@/components/WhyUs";
 import FAQ from "@/components/FAQ";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
-// import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
 import TextHoverEffectDemo from "@/components/TextHoverEffectDemo";
 import Loader from "@/Loader/Loader";
+// import Hero from "@/components/Hero";
+// import Stats from "@/components/Stats";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

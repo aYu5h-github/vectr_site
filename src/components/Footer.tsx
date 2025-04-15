@@ -122,7 +122,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-// import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { siteDetails } from '@/data/siteDetails';
 import { footerDetails } from '@/data/footer';
@@ -139,13 +139,13 @@ const getPlatformIconByName = (platformName: string): JSX.Element | null => {
 };
 
 const Footer: React.FC = () => {
-  // const pathname = usePathname();
+  const pathname = usePathname();
 
-  // const isActive = (path: string) => {
-  //   return pathname === path
-  //     ? 'text-foreground-accent'
-  //     : 'hover:text-purple-700';
-  // };
+  const isActive = (path: string) => {
+    return pathname === path
+      ? 'text-foreground-accent'
+      : 'hover:text-purple-700';
+  };
 
   return (
     <div id='footer'>
@@ -175,19 +175,13 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
               ))}
+              
               <li>
-                {/* 1st way */}
-                {/* <Link href="/teams">
+                <Link href="/teams">
                   <span className={`${isActive('/teams')} transition duration-300 cursor-pointer`}>
                     Teams
                   </span>
-                </Link> */}
-
-                {/* 2nd way */}
-                {/* <Link href="/teams">
-                  Teams
-                </Link> */}
-
+                </Link>
               </li>
             </ul>
           </div>
